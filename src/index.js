@@ -2,4 +2,4 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {MathSymbols} from './lib';
 
-ReactDOM.render(<div>Ramu</div>, document.getElementById("root"));
+ReactDOM.render(<div>Welcome to Math Symbols</div>, document.getElementById("root"));
