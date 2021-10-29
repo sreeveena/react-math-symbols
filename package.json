@@ -2,28 +2,34 @@
   "name": "react-math-symbols",
   "version": "0.1.9",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
     "rollup-plugin-babel": "^4.4.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^4.9.1"
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-react": "^7.14.5",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "autoprefixer": "^10.3.7",
+    "babel-loader": "^8.2.3",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "rollup": "^2.58.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-sourcemaps": "^0.6.3",
-    "rollup-plugin-styles": "^3.14.1"
+    "rollup-plugin-styles": "^3.14.1",
+    "webpack-cli": "^4.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,7 +37,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "transpile": "babel src -d dist --copy-files",
-    "compile": "NODE_ENV=production babel src/lib -d dist --copy-files"
+    "compile": "NODE_ENV=production babel src/lib -d dist --copy-files",
+    "production": "webpack --mode=production"
   },
   "eslintConfig": {
     "extends": [
