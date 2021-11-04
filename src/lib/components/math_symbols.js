@@ -378,6 +378,7 @@ class Symbols extends React.Component {
                 <IconButton className={classes.buttonIcon3} onClick={() => {if(this.props.onClose) {this.props.onClose(); this.setState({ MQ: null, mathField: null})}}} style={{padding: '0px'}}>
                       <CloseRoundedIcon style={{fontSize: '15px', marginLeft: '3px'}}/>
                 </IconButton>
+                <Typography>Enter Mathematical Notiation <a href="https://katex.org/docs/supported.html">KaTeX</a> or use symbols below.</Typography>
                 </div>
                 <div ref={(element) => {
                   console.log(element);
