@@ -379,7 +379,7 @@ class Symbols extends React.Component {
                       <CloseRoundedIcon style={{fontSize: '15px', marginLeft: '3px'}}/>
                 </IconButton>
                 </div>
-                <Typography style={{fontSize: "10px"}}>Enter Mathematical Notiation <a target="_blank" href="https://katex.org/docs/supported.html">KaTeX</a> or use symbols below.</Typography>
+                <Typography style={{fontSize: "13px"}}>Enter Mathematical Notiation <a target="_blank" href="https://katex.org/docs/supported.html">KaTeX</a> or use symbols below.</Typography>
                 <div ref={(element) => {
                   console.log(element);
                   if(element) {
